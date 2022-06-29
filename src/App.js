@@ -17,7 +17,7 @@ function App() {
   const generateID = () => {
     return 'id' + Math.random().toString(16).slice(2);
   };
-
+  // Constant test list
   const sampleTodo = [
     {
       id: generateID(),
@@ -36,11 +36,11 @@ function App() {
       description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     },
   ];
-
+  // variables
   const [show, setShow] = useBoolean(false);
   const [todos, setTodos] = React.useState(sampleTodo);
   const [currID, setCurrID] = React.useState('');
-
+  // Returned View
   return (
     <ChakraProvider theme={theme}>
       <VStack p={10} spacing={5}>
